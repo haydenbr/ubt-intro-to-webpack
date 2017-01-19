@@ -51,7 +51,7 @@ It's a module bundler <!-- .element: class="fragment" -->
 in gulp land
 
 ```js
-// for every task
+// gulp.js
 gulp.src('src/app/**/*.ts') // etc.
   .pipe(ngAnnotate())
 	.pipe(jslint())
@@ -68,9 +68,14 @@ gulp.src('src/app/**/*.ts') // etc.
 in webpack
 
 ```js
+// webpack.config.js
 module.exports = {
 	...
-entry: ['./src/app/main.ts'],
+	entry: ['./src/app/main.ts'],
+	output: {
+		filename: 'app.min.js',
+		path: './build'
+	}
 	...
 }
 ```
@@ -102,17 +107,57 @@ var _ 			= require('lodash'),
 
 #HSLIDE
 
-Suppose I had done something like this
+Picture this:
 
 ```js
 import * as _ from 'lodash';
+// imports the whole of lodash
 
 _.each([1,2,3], console.log);
 ```
 
 ```js
 import 'lodash/each';
+// only imports the each function
 
 each([1,2,3], console.log);
 ```
-<!-- .element: class="fragment" -->
+
+Don't need to worry about custom builds <!-- .element: class="fragment" -->
+
+
+#HSLIDE
+
+## 4 main concepts of Webpack
+
+1. Entry <!-- .element: class="fragment" -->
+2. Output <!-- .element: class="fragment" -->
+3. Loaders <!-- .element: class="fragment" -->
+4. Pluggins <!-- .element: class="fragment" -->
+
+
+#HSLIDE
+
+## Loaders
+
+```js
+module: {
+	rules: [
+		{ test: /\.(scss)$/, use: 'sass-loader' },
+		{ test: /\.ts$/, use: 'awesome-typescript-loader' }
+	]
+}
+```
+
+
+#HSLIDE
+
+## Loaders
+
+```js
+module: {
+	rules: [
+		{test: /\.(scss)$/, loader: 'sass-loader'}
+	]
+}
+```
