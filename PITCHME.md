@@ -33,7 +33,7 @@ It's a module bundler <!-- .element: class="fragment" -->
 
 ## Drawbacks?
 
-- Webpack is slower <!-- .element: class="fragment" -->
+- Webpack <i>seems</i> slower <!-- .element: class="fragment" -->
 - Steeper learning curve <!-- .element: class="fragment" -->
 - Documentation :'-( <!-- .element: class="fragment" -->
 - Gulp was a more general purpose task runner (but you can always use npm scripts) <!-- .element: class="fragment" -->
@@ -166,9 +166,6 @@ module: {
 - replacing constants <!-- .element: class="fragment" -->
 - internationalization <!-- .element: class="fragment" -->
 - dependency injections <!-- .element: class="fragment" -->
-
-
-```
 
 
 #HSLIDE
