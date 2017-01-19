@@ -99,6 +99,11 @@ var _ 			= require('lodash'),
 
 #HSLIDE
 
+## The "Dependency Graph"
+
+
+#HSLIDE
+
 ## This helps in 2 main ways.
 
 1. Managing file dependencies <!-- .element: class="fragment" -->
@@ -140,11 +145,13 @@ Don't need to worry about custom builds <!-- .element: class="fragment" -->
 
 ## Loaders
 
+### Define how to handle different file types <!-- .element: class="fragment" -->
+
 ```js
 module: {
-	rules: [
-		{ test: /\.(scss)$/, use: 'sass-loader' },
-		{ test: /\.ts$/, use: 'awesome-typescript-loader' }
+	loaders: [
+		{ test: /\.scss$/, loaders: ['sass-loader'] },
+		{ test: /\.ts$/, loaders: ['awesome-typescript-loader'] }
 	]
 }
 ```
@@ -152,12 +159,18 @@ module: {
 
 #HSLIDE
 
-## Loaders
+## Pluggins
 
-```js
-module: {
-	rules: [
-		{test: /\.(scss)$/, loader: 'sass-loader'}
-	]
-}
+### Perform operations on your bundled code
+
+- replacing constants <!-- .element: class="fragment" -->
+- internationalization <!-- .element: class="fragment" -->
+- dependency injections <!-- .element: class="fragment" -->
+
+
 ```
+
+
+#HSLIDE
+
+# Examples!!!
