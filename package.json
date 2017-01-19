@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/haydenbr/ubt-intro-to-webpack/issues"
   },
-  "homepage": "https://github.com/haydenbr/ubt-intro-to-webpack#readme"
+  "homepage": "https://github.com/haydenbr/ubt-intro-to-webpack#readme",
+  "devDependencies": {
+    "webpack": "^2.2.0-rc.3"
+  }
 }

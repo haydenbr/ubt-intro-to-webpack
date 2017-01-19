@@ -8,4 +8,6 @@
 
 ## What is Webpack?
 
-<!--A service that turns GitHub (or Bitbucket) repositories into <span class="primary">interactive slideshows</span>-->
+"I'm glad you asked."
+
+<!-- <!-- .element: class="fragment" --> -->
