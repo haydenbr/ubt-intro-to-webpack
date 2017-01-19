@@ -1,6 +1,6 @@
 #HSLIDE
 
-# Presentations Using Git Pitch
+# Intro to Webpack
 
 <span class="primary"><strong>Hayden Braxton</strong></span> - 2017.01.19
 
