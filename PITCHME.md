@@ -15,7 +15,9 @@ It's a module bundler <!-- .element: class="fragment" -->
 
 #HSLIDE
 ## Why use webpack rather than gulp?
+
 ![gulp](images/gulp.png)
+
 "I'm glad you asked that." <!-- .element: class="fragment" -->
 
 #HSLIDE
