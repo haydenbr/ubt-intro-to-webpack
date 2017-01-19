@@ -110,9 +110,9 @@ import * as _ from 'lodash';
 _.each([1,2,3], console.log);
 ```
 
-<!-- .element: class="fragment" -->
 ```js
 import 'lodash/each';
 
 each([1,2,3], console.log);
 ```
+<!-- .element: class="fragment" -->
