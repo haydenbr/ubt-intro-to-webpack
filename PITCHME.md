@@ -9,5 +9,5 @@
 "I'm glad you asked." <!-- .element: class="fragment" -->
 
 #HSLIDE
-It's a "module bundler"
+## It's a "module bundler"
 ![what-is-webpack](images/what-is-webpack.png)
