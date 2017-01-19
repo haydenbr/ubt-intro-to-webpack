@@ -8,6 +8,4 @@
 
 ## What is Webpack?
 
-"I'm glad you asked."
-
-<!-- <!-- .element: class="fragment" --> -->
+"I'm glad you asked." <!-- .element: class="fragment" -->
